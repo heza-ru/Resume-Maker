@@ -1,0 +1,63 @@
+/*FONTS*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Righteous:400,400i,700");
+/* Global VARs */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-bg: #16161a;
+  --nav-logo: #fff;
+  --nav-link: #9e9e9e;
+  --nav-link-hover: #fff;
+  --nav-border: #010101;
+  --nav-btn: #7f5af0;
+}
+
+body {
+  background-color: #16161a;
+}
+
+/* NAVBAR (base)*/
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Montserrat, sans-serif;
+  background-color: var(--nav-bg);
+  padding: 20px 30px;
+  color: var(--nav-color);
+  margin-bottom: 1em;
+  border-bottom: var(--nav-border) solid 3px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.nav-logo {
+  /*font-family: Righteous, sans-serif;*/
+  font-size: 1.2em;
+  color: var(--nav-logo);
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.nav-list a {
+  color: var(--nav-link);
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.nav-list a:hover {
+  color: var(--nav-link-hover);
+}
