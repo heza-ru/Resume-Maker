@@ -61,3 +61,56 @@ body {
 .nav-list a:hover {
   color: var(--nav-link-hover);
 }
+
+/* NAVBAR (Contact button) */
+.nav-btn {
+  background-color: var(--nav-btn);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  text-align:center;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 2px 5px 0 rgba(116, 79, 168, 0.75);
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+img {
+    width: 6%;
+}
+
+.nav-btn:hover {
+    background-position: 100% 0;
+    font-size: 1.2em;
+    transition: all .4s ease-in-out;
+}
+
+/* HOME (main) */
+/* Create two equal columns that floats next to each other */
+.column {
+    font-family: Montserrat, sans-serif;
+    font-size: 2em;
+    color: #fff;
+    float: left;
+    width: 50%;
+    padding: 5% 0px 0px 9%;
+    /*margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;*/
+}
+.column p{
+    color: #94a1b2;
+}
+.column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+}
