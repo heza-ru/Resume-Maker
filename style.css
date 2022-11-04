@@ -114,3 +114,44 @@ img {
     width: 60%;
     height: auto;
 }
+
+/* HOME (Contact button) */
+.main-btn {
+  margin: 5% 0 0 30%;
+  background-color: var(--nav-btn);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 200px;
+  height: 55px;
+  text-align:center;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 2px 5px 0 rgba(116, 79, 168, 0.75);
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  font-weight: bold;
+  font-size: 0.7em;
+}
+
+.main-btn:hover {
+    background-position: 100% 0;
+    font-size: 0.75em;
+    transition: all .4s ease-in-out;
+}
+
+/* HOME (responsive) */
+@media screen and (max-width: 1200px) {
+    .column {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 5% 0px 0px 0px;
+        width: 100%;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .main-btn {
+      margin: 5% 0 0 0;
+    }
+}
