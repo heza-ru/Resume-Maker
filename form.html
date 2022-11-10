@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
     <title>Resume Maker: Form</title>
@@ -13,19 +15,17 @@
 
 <body>
     <!-- NAVBAR-->
-    <nav class="nav">
-        <a class="nav-logo" href="index.html">&emsp;Resume Maker</a>
-        <ul class="nav-list">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="form.html">Form</a>
-            </li>
-        </ul>
-        <a href="#">
-            <button class="nav-btn" style="visibility: hidden;">CREATE!</button>
-        </a>
+    <nav class="navbar navbar-dark navbar-expand-md px-4 py-4" style="background-color: #16161a;">
+        <a href="index.html" class="navbar-brand">Resume Maker</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar" >
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link" style="margin-left: 36vw" id="space">Home</a></li>
+                <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li>
+            </ul>
+        </div>
     </nav>
     <!-- FORM -->
     <div class="" id="cv-form">
@@ -42,7 +42,8 @@
 
                             <div class="form-group">
                                 <label for="nameField">Name</label>
-                                <input type="text" id="nameField" placeholder="Enter here" class="form-control" required/>
+                                <input type="text" id="nameField" placeholder="Enter here" class="form-control"
+                                    required />
                             </div>
 
                             <div class="form-group mt-2">
@@ -58,7 +59,7 @@
 
                             <div class="form-group mt-3">
                                 <label for="">Select your photo</label>
-                                <input id="imgField" type="file" class="form-control" required/>
+                                <input id="imgField" type="file" class="form-control" required />
                             </div>
 
                             <h4 class="text-secondary my-3">Important Links</h4><br>
@@ -233,6 +234,23 @@
             </div>
         </div>
     </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #16161a;">
+            Made with ❤️ By Mohammad Haider<br>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"

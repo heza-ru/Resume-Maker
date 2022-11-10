@@ -23,7 +23,7 @@ body {
 }
 
 /* NAVBAR (base)*/
-.nav {
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +31,6 @@ body {
   background-color: var(--nav-bg);
   padding: 20px 30px;
   color: var(--nav-color);
-  margin-bottom: 1em;
   border-bottom: var(--nav-border) solid 3px;
   font-weight: bold;
   font-size: 1.1em;
@@ -268,6 +267,10 @@ li {
   button {
     visibility: hidden;
   }
+
+  footer {
+    visibility: hidden;
+ }
 
 }
 
