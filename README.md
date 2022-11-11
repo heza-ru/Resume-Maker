@@ -1,1 +1,1 @@
-A simple Resume Maker coded in Vanilla HTML, CSS & JavaScript.
+A simple Resume Maker coded in HTML, CSS, JavaScript & Bootstrap.
