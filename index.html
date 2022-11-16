@@ -8,53 +8,241 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Resume Maker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <title>Resume Maker: Home</title>
 </head>
 
-<body>
+<body style="background-color: #16161a">
     <!-- NAVBAR-->
-    <nav class="nav">
-        <a class="nav-logo" href="index.html">Resume Maker</a>
-        <ul class="nav-list">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="form.html">Form</a>
-            </li>
-        </ul>
-        <a href="form.html">
-            <button class="nav-btn">CREATE!</button>
-        </a>
+    <nav class="navbar navbar-dark navbar-expand-md px-4 py-4" style="background-color: #16161a;">
+        <a href="index.html" class="navbar-brand">Resume Maker</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-center " id="navbar">
+            <ul class="navbar-nav ">
+                <li class="nav-item "><a href="index.html" class="nav-link" id="space">Home</a></li>
+                <li class="nav-item"><a href="form.html" class="nav-link">Form</a></li><span
+                    style="visibility: hidden;">fgsdgsdfgsdfgfff</span>
+            </ul>
+        </div>
     </nav>
     <!-- HOME -->
-    <div class="row">
-        <div class="column">
-            <h2>Create a resume to land your next job</h2>
-            <br>
-            <p>Build beautiful, recruiter-tested resumes in a few clicks! Our resume builder is powerful and easy to use,
-                 with a range of amazing functions. Custom-tailor resumes for any job within minutes. Increase your interview 
-                 chances and rise above the competition.
-            </p>
-            <a href="form.html"><button class="main-btn">CREATE A RESUME</button></a>
-        </div>
-        <div class="column">
-            <img src="assets/resume.png">
+    <div class="container-fluid my-5 px-5 py-5">
+        <div class="row p-0 pb-0 pe-lg-0 pt-lg-0 align-items-center ">
+            <div class="col-lg-7 p-3 p-lg-5 pt-lg-5 ">
+                <h1 class="display-4 fw-bold lh-1"
+                    style="font-family: Montserrat, sans-serif; color: #fff;font-size: 3.5em;">Create a
+                    resume to land your next job</h1>
+                <p class="lead py-3 pr-4" style="font-family: Montserrat, sans-serif; color: #94a1b2;font-size: 1.7em;">
+                    Build beautiful,
+                    recruiter-tested resumes in a few clicks! Our resume builder is powerful and easy to use,
+                    with a range of amazing functions. Custom-tailor resumes for any job within minutes. Increase your
+                    interview
+                    chances and rise above the competition.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 ">
+                    <a href="form.html"><button class="btn btn-lg px-4 me-md- fw-bold btnhov" style="background-size: 300% 100%;
+                    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+                    box-shadow: 1px 1000px 1px 1px #16161a inset;
+                    border-radius: 50px;transition: all .4s ease-in-out;color: #fff;">CREATE A RESUME</button></a>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-3.5 p-0 overflow-hidden ">
+                <img style="display: block;margin-left: auto;margin-right: auto;width: 60%;height: auto; background-color: #16161a;"
+                    src="assets/resume.png" alt="resume">
+            </div>
         </div>
     </div>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="text-center p-3" style="background-color: #16161a;">
-            Made with ❤️ By Mohammad Haider<br><br>
+    <!--Features Palette-->
+    <div class="container-fluid" style="padding:10% 2% 0 2%;">
+        <div class="container-fluid px-4 py-5 mt-5" id="hanging-icons"
+            style="background-color: #212529; color: #fff;font-family: Montserrat, sans-serif; border-radius: 0.8rem;">
+            <h1 class="pb-5 border-bottom text-center fw-bold">Features designed to help you win your dream job
+            </h1>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start py-3">
+                    <div class="icon-square bg-dark text-light flex-shrink-0 me-4">
+                        <i class="fas fa-edit fa-2x"></i>
+                    </div>
+                    <div>
+                        <h2>Easy online resume builder</h2>
+                        <p>Create an awesome resume, cover letter or online profile without leaving your web browser.
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start py-3">
+                    <div class="icon-square bg-dark text-light flex-shrink-0 me-4">
+                        <i class="fas fa-rupee-sign fa-2x"></i>
+                    </div>
+                    <div>
+                        <h2>No hidden fees</h2>
+                        <p>With Resume Builder, you won’t spend hours working on your resume, just to be hit with a
+                            hidden paywall.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start py-3">
+                    <div class="icon-square bg-dark text-light flex-shrink-0 me-4">
+                        <i class="far fa-star fa-2x"></i>
+                    </div>
+                    <div>
+                        <h2>ATS-Friendly</h2>
+                        <p>Our resume templates are ATS-friendly. It means your resume won’t automatically be rejected
+                            because an ATS can’t read it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Carousel -->
+    <section>
+        <div class="container">
+            <h1 class="section-header pt-5">Client Review <span>Reviewed by the community. Trusted by
+                    professionals</span></h1>
+            <div class="testimonials">
+
+                <div id="carouselExampleControls" class="carousel slide px-2" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="assets/1.webp" alt="">
+                                            </div>
+                                            <div class="bio">
+                                                <h2>Brandon Klein</h2>
+                                                <h6>Senior Product Marketing Manager at Badu Networks</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <p><span><i class="fa fa-quote-left"></i></span>Absolutely love Resume
+                                                Maker! The layouts are phenomenal and enhancement hints that the tool
+                                                provides you with is like having your own personal resume consultant! So
+                                                much better than spending hours creating my own design files.</p>
+                                            <p class="socials">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-behance"></i>
+                                                <i class="fa fa-pinterest"></i>
+                                                <i class="fa fa-dribbble"></i>
+                                                <i class="fa fa-vimeo"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="assets/2.webp" alt="">
+                                            </div>
+                                            <div class="bio">
+                                                <h2>Linn Mollberg</h2>
+                                                <h6>Junior Marketing Assistant</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <p><span><i class="fa fa-quote-left"></i></span>With sleek designs and an
+                                                easy to use online tool, Resume Builder allowed me to quickly build and
+                                                edit a professional resume with a personal touch, which ultimately
+                                                helped me to get my dream job. I am now relocating to Barcelona to work
+                                                for a top tier company.</p>
+                                            <p class="socials">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-behance"></i>
+                                                <i class="fa fa-pinterest"></i>
+                                                <i class="fa fa-dribbble"></i>
+                                                <i class="fa fa-vimeo"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="single-item">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="profile">
+                                            <div class="img-area">
+                                                <img src="assets/3.webp" alt="">
+                                            </div>
+                                            <div class="bio">
+                                                <h2>Shylean Keshwani</h2>
+                                                <h6>Advanced Manufacturing at Apple Inc.</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="content">
+                                            <p><span><i class="fa fa-quote-left"></i></span>You’ve researched the
+                                                companies you want to work at and found right people to send your resume
+                                                and right when you decide to hit send you realize how generic it really
+                                                looks. In today's competitive job market, you can’t afford to miss out
+                                                on opportunities because your resume isn’t eye-catching. This is where
+                                                Resume Maker comes in by providing the much-needed change to the dull
+                                                resume you have been using for years.</p>
+                                            <p class="socials">
+                                                <i class="fa fa-twitter"></i>
+                                                <i class="fa fa-behance"></i>
+                                                <i class="fa fa-pinterest"></i>
+                                                <i class="fa fa-dribbble"></i>
+                                                <i class="fa fa-vimeo"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+
+        <!-- Copyright -->
+        <div class="text-center p-3 pt-5"
+            style="background-color: #16161a;  font-family: Montserrat, sans-serif; font-weight: bold; font-size: 0.9em;">
+            Made with ❤️ By Mohammad Haider<br>
             <!-- Linkedin -->
-            <a  href="https://www.linkedin.com/in/mohammad-haider-heza/" target="_blank" role="button"><i
-                    class="fab fa-linkedin-in fa-inverse"></i></a>&nbsp;
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mohammad-haider-heza/"
+                target="_blank" role="button"><i class="fab fa-linkedin-in"></i></a>
 
             <!-- Github -->
-            <a  href="https://github.com/heza-ru" target="_blank" button"><i class="fab fa-github fa-inverse"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/heza-ru" target="_blank"
+                button><i class="fab fa-github"></i></a>
 
         </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
