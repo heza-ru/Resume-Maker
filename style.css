@@ -133,6 +133,14 @@ img {
   height: auto;
 }
 
+.home img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: auto;
+}
+
 /* HOME (Contact button) */
 .main-btn {
   margin: 5% 0 0 30%;
@@ -181,6 +189,92 @@ img {
 
 }
 
+/* Testimonials */
+
+section {
+  display: grid;
+  place-items: center;
+  font-family: Montserrat, sans-serif;
+  height: 100vh;
+}
+
+.section-header {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 25px;
+  color: #fff;
+}
+
+.section-header:after {
+  content: '';
+  height: 3px;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #fff;
+}
+
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+
+.single-item {
+  background: #242629;
+  color: rgb(255, 250, 250);
+  border-radius: 0.8rem;
+  padding: 15px;
+  margin: 50px 15px;
+}
+
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid #7f5af0;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: #7f5af0;
+}
+
+.socials i {
+  margin-right: 25px;
+}
+
+
+
+
+
 /* FORM */
 
 #cv-form {
@@ -217,7 +311,7 @@ img {
 .form-group input {
   display: inline-block;
   padding: 1em;
-  color:#010101;
+  color: #010101;
   border: 2px solid hsla(246, 25%, 77%, 0.25);
   border-radius: 0.5em;
   font-weight: 600;
@@ -230,7 +324,7 @@ img {
 
 .form-group textarea {
   padding: 1em;
-  color:#010101;
+  color: #010101;
   border: 2px solid hsla(246, 25%, 77%, 0.25);
   border-radius: 0.5em;
   font-weight: 600;
@@ -240,11 +334,13 @@ img {
   outline: none;
   border: 2px solid #7f5af0;
 }
+
 #cv-box {
   background-color: #16161a;
   width: 100%;
   height: 100%;
 }
+
 #cv-template {
   display: none;
   width: 40%;
@@ -267,7 +363,7 @@ img {
 
 li {
   text-align: left;
-  color:#010101
+  color: #010101
 }
 
 .btn {
@@ -279,7 +375,7 @@ li {
 
 @media print {
   nav {
-     visibility: hidden;
+    visibility: hidden;
   }
 
   #cv-template {
@@ -292,7 +388,7 @@ li {
 
   footer {
     visibility: hidden;
- }
+  }
 
 }
 
