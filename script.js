@@ -1,4 +1,19 @@
-// alert("loading");
+// formValidation
+function validateForm() {
+  var nameVal = document.getElementById("nameField").value;
+  var contVal = document.getElementById("contactField").value;
+  var addVal = document.getElementById("addressField").value;
+  if(nameVal == null || nameVal == "") {
+  return false;
+  } else if(contVal == null || contVal == ""){
+    return false;
+  } else if(addVal == null || addVal == ""){
+    return false;
+  } else {
+  generateCV();
+  }
+  }
+//Field Addition
 function addNewWEField() {
     //   console.log("Adding new field");
   
